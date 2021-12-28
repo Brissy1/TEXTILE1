@@ -1,0 +1,47 @@
+<tfml>
+
+
+
+<form 	
+			classHdr="VtOrdVenRigaPrmMontSmontK"
+			name="VtOrdVenRigaPrmMontSmontKForm"
+			onLoadPresent="yes"
+			errorList="no"
+			inputFont="Arial,10"
+			menubar="no"
+			toolbar="no"
+			submitReset="none"
+			servlet="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmMontSmontKFormActionAdapter"
+			jsLibraryName="it/thera/thip/tessile/vendite/ordineVE/VtOrdVenRigaPrmMontSmontK.js"
+			header="it.thera.thip.cs.Header.jsp"
+			footer="it.thera.thip.cs.Footer.jsp"
+			webFormModifierClass="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmMontSmontKFormModifier"
+			>
+			 
+		
+<textinput classAD="IdAzienda" name="IdAzienda"/>
+<textinput classAD="AnnoOrdine" name="AnnoOrdine"/>
+<textinput classAD="NumeroOrdine" name="NumeroOrdine"/>
+<textinput classAD="RigaOrdine" name="RigaOrdine"/>
+<textinput classAD="DettaglioRigaOrdine" name="DettaglioRigaOrdine"/>
+<textinput classAD="GruppoTC" name="GruppoTC"/>
+<textinput classAD="IdArticolo" name="IdArticolo"/>
+
+<multisearchform classRD="RMagazzinoPart" name="RMagazzinoPart" onKeyBlur="setTipo()" onKeyChange="setTipo()" additionalRestrictConditions="IdAzienda, IdAzienda;AnnoOrdine,AnnoOrdine;NumeroOrdine,NumeroOrdine;RigaOrdine,RigaOrdine" specificDOList="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmMontSmontKDoList"/>
+
+<multisearchform classRD="RMagazzinoKit" name="RMagazzinoKit"/>
+
+<textinput classAD="QtaKit" name="QtaKit" onChange="ricalcolaQtaMag()" />
+
+	<!-- Combo Tipo Interno/esterno-->
+	
+	<combobox classAD="TipoMontSmont" name="TipoMontSmont" onChange=""/>
+				
+	<button name="OKMONT" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmMontSmontK" resourceID="OKMONT" script="okButtonMontaggio();matrixReolad();" /> 
+	<button name="OKSMONT" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmMontSmontK" resourceID="OKSMONT" script="okButtonSmontaggio();matrixReolad();"/> 
+	
+	<button name="CHIUDI" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmMontSmontK" resourceID="CHIUDI" script="window.close();"/>
+
+</form>
+
+</tfml>

@@ -1,0 +1,43 @@
+<tfml>
+
+
+
+<form 	
+			classHdr="VtOrdVenRigaPrmMontSmontK"
+			name="VtOrdVenRigaPrmMontSmontKForm"
+			onLoadPresent="yes"
+			errorList="no"
+			inputFont="Arial,10"
+			menubar="no"
+			toolbar="no"
+			submitReset="none"
+			servlet="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmMontSmontKFormActionAdapter"
+			jsLibraryName="it/thera/thip/tessile/vendite/ordineVE/VtOrdVenRigaPrmSmontK.js"
+			header="it.thera.thip.cs.Header.jsp"
+			footer="it.thera.thip.cs.Footer.jsp"
+			webFormModifierClass="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmMontSmontKFormModifier"
+			>
+			 
+		
+<textinput classAD="IdAzienda" name="IdAzienda"/>
+<textinput classAD="AnnoOrdine" name="AnnoOrdine"/>
+<textinput classAD="NumeroOrdine" name="NumeroOrdine"/>
+<textinput classAD="RigaOrdine" name="RigaOrdine"/>
+<textinput classAD="DettaglioRigaOrdine" name="DettaglioRigaOrdine"/>
+<textinput classAD="GruppoTC" name="GruppoTC"/>
+<textinput classAD="IdArticolo" name="IdArticolo"/>
+
+<multisearchform classRD="RMagazzinoKit" name="RMagazzinoKit"/>
+
+
+
+	<!-- Combo Tipo Interno/esterno-->
+	
+				
+	<button name="OKSMONT" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmMontSmontK" resourceID="OKSMONT" script="okButtonSmontaggio();matrixReolad();"/> 
+	
+	<button name="CHIUDI" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmMontSmontK" resourceID="CHIUDI" script="window.close();"/>
+
+</form>
+
+</tfml>

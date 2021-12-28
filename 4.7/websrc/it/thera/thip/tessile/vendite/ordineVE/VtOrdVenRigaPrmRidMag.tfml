@@ -1,0 +1,45 @@
+<tfml>
+
+
+
+<form 	
+			classHdr="VtOrdVenRigaPrmRidMag"
+			name="VtOrdVenRigaPrmRidMagForm"
+			onLoadPresent="yes"
+			errorList="no"
+			inputFont="Arial,10"
+			menubar="no"
+			toolbar="no"
+			submitReset="none"
+			servlet="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmRidMagFormActionAdapter"
+			jsLibraryName="it/thera/thip/tessile/vendite/ordineVE/VtOrdVenRigaPrmRidMag.js"
+			header="it.thera.thip.cs.Header.jsp"
+			footer="it.thera.thip.cs.Footer.jsp"
+			webFormModifierClass="it.thera.thip.tessile.vendite.ordineVE.web.VtOrdVenRigaPrmRidMagFormModifier"
+			>
+			 
+		
+<textinput classAD="IdAzienda" name="IdAzienda"/>
+<textinput classAD="AnnoOrdine" name="AnnoOrdine"/>
+<textinput classAD="NumeroOrdine" name="NumeroOrdine"/>
+<textinput classAD="RigaOrdine" name="RigaOrdine"/>
+<textinput classAD="IdArticolo" name="IdArticolo"/>
+<textinput classAD="GruppoTC" name="GruppoTC"/>
+<textinput classAD="DettaglioRigaOrdine" name="DettaglioRigaOrdine"/>
+				
+<multisearchform classRD="RMagazzino" name="RMagazzino"/>
+<multisearchform classRD="RMagazzinoPart" name="RMagazzinoPart"/>
+<multisearchform classRD="RMagazzinoDest" name="RMagazzinoDest"/>
+
+<textinput classAD="QtaTrasferire" name="QtaTrasferire"  />
+
+
+	<button name="OK" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmRidMag" resourceID="OK" script="okButtonSdoppio();matrixReolad();" /> 
+	<button name="OKTRASF" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmRidMag" resourceID="OKTRASF" script="okButtonTrasferimento();matrixReolad();"/> 
+	<button name="OKONLYTRASF" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmRidMag" resourceID="OKONLYTRASF" script="okButtonOnlyTrasferimento();matrixReolad();"/>
+	
+	<button name="CHIUDI" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtOrdVenRigaPrmRidMag" resourceID="CHIUDI" script="window.close();"/>
+
+</form>
+
+</tfml>

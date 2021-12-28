@@ -1,0 +1,26 @@
+<tfml>
+  <generator type="form"/>
+  <form classHdr="VtCausaleSaldoManualeRiga"
+    name="VtCausaleSaldoManualeRigaForm"
+    locktype="optimistic"
+    errorList="yes" menubar="yes" toolbar="yes" submitReset="none"
+    jsLibraryName="it/thera/thip/tessile/vendite/ordineVE/VtCausaleSaldoManualeRiga.js"
+    onLoadPresent="yes"
+    header="com.thera.thermfw.common.Header.jsp"
+    footer="com.thera.thermfw.common.Footer.jsp">
+    <menubar  name="myMenuBar">
+      <import file="com/thera/thermfw/common/defObjMenu.tfml"/>
+    </menubar>
+    <toolbar name="myToolBar" imgwidth="16" imgheight="16">
+      <import file="com/thera/thermfw/common/defObjMenu.tfml"/>
+    </toolbar>
+    <tabbed name="mytabbed" height="100%" width="100%">
+      <tab name="tab1" resourceFile="it.thera.thip.tessile.vendite.ordineVE.resources.VtCausaleSaldoManualeRiga" resourceID="tab1">
+        <textinput name="Idazienda" classAD="Idazienda"/>
+        <textinput name="Codicedescrizione" classAD="Codicedescrizione"/>
+        <textinput name="IdCauSaldoManualeRiga" classAD="IdCauSaldoManualeRiga"/>
+      </tab>
+    </tabbed>
+  </form>
+</tfml>
+

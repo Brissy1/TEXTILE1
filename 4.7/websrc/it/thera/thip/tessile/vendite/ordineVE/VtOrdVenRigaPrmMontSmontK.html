@@ -1,0 +1,191 @@
+<html>
+<head>
+<style type="text/css">                                                                                               
+			.cellStyleMagazzino{
+    		border-width: 0px;
+    		height:20px;
+    		border-color:transparent;
+     		background-color: #FFFFCC;
+			}
+			
+			.cellStyleMagazzinoTD{
+    		border-width: 0px;
+    		height:20px;
+    		width:15%;
+    		border-color:transparent;
+     		background-color: #FFFFCC;
+			}
+			
+			.cellStyleComponente{
+    		border-width: 0px;
+    		font-size: 9px;
+    		width:100%;
+    		border-color:transparent;
+     		background-color: #FFCC00;
+			}
+			
+			.cellStyleComponenteTD{
+    		border-width: 0px;
+    		
+    		width:15%;
+    		border-color:transparent;
+     		background-color: #FFCC00;
+			}
+			
+			.cellStyleArticolo{
+    		border-width: 0px;
+    		font-size: 9px;
+    		width:100%;
+    		
+    		border-color:transparent;
+     		background-color: #CCCCCC;
+			}
+			
+			
+			.cellStyleArticoloTD{
+    		border-width: 0px;
+    		font-size: 10px;
+    		width:50%;
+    		
+    		border-color:transparent;
+     		background-color: #CCCCCC;
+			}
+			
+			.cellStyleDati{
+    		border-width: 0px;
+    		width:100%;
+    		border-color:transparent;
+    		
+     		background-color: #FFFFFF;
+			}
+				.cellStyleDatiTD{
+    		border-width: 0px;
+    		width:15%;
+    		border-color:transparent;
+    		
+     		background-color: #FFFFFF;
+			}
+			
+			
+			table#matrice td{
+			   
+			   border-width: 0px;
+    		width:10%;
+    		border-color:transparent;
+			    
+			    
+			}
+					</style>
+</head>
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" >
+
+	<form name="VtOrdVenRigaPrmMontSmontKForm">
+		<table width="100%">
+			<tr>
+				<td><input id="IdAzienda" name="IdAzienda"
+					style="display: none;" />
+				</td>
+				<td><input id="AnnoOrdine" name="AnnoOrdine"
+					style="display: none;" />
+					<input id="NumeroOrdine" name="NumeroOrdine"
+					style="display: none;" /></td>
+				<td><input id="IdArticolo" name="IdArticolo"
+					value="0" style="display: none;"/></td>
+				<td><input id="RigaOrdine" name="RigaOrdine"
+					style="display: none;" />
+					<input id="DettaglioRigaOrdine" name="DettaglioRigaOrdine"
+					value="0" style="display: none;" /></td>
+				<td>
+					<input id="GruppoTC" name="GruppoTC"
+					value="0" style="display: none;"/>
+					</td>
+
+			</tr>
+		
+		
+			<tr>
+				<td colspan="2"><label >Magazzino di partenza</label></td>
+				<td colspan="3"><span class="multisearchform"
+					id="RMagazzinoPart" name="RMagazzinoPart" ></span></td>
+			</tr>
+		
+			<tr>
+				<td colspan="2"><label >Magazzino </label></td>
+				<td colspan="3"><span class="multisearchform"
+					id="RMagazzinoKit" name="RMagazzinoKit" ></span></td>
+			</tr>
+			
+			
+				 <tr>
+    		<td colspan="2" ><label > Quantita </label></td>
+    		<td colspan="3"><input  name="QtaKit" id="QtaKit" /> </td>
+    	</tr> 
+    	<tr>
+    	<!-- Combo Tipo interno/esterno -->
+				<td colspan="2" nowrap="true">
+					<label for="TipoMontSmont">
+						Tipo
+					</label>
+				</td>
+				<td colspan="3">
+					<select name="TipoMontSmont" id="TipoMontSmont" readonly="true">
+						<option></option>
+					</select>
+				</td>
+    	</tr>
+    	<tr>
+		<td colspan="5">
+		&nbsp;
+		&nbsp;
+		</td>
+		</tr>
+    		<tr>
+		<td colspan="5" >
+		
+		<fieldset >
+		<legend align="top"> 
+						
+			<label>
+			Componenti
+			</label>
+			</legend>
+			
+		<table id="Matrice"  name="Matrice" width="100%" border="0" >
+		</table>
+		
+		</fieldset>
+		
+		</td>
+		
+		
+			
+		
+			</tr>
+			
+    	
+		<tr>
+		<td colspan="5" >
+		<table style="width:180px;">
+			<tr>
+			<td><button name="OKMONT" id="OKMONT" type="button"  style=" width:180px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			
+			<td><button name="OKSMONT"  id="OKSMONT" type="button" style=" width:180px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			
+			<td><button name="CHIUDI" id="CHIUDI" type="button" style="width:80px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			</tr>
+		
+		
+		</table>
+			</td>
+			
+			</tr>
+			
+			<iframe frameborder="0" height="0" id="errorsFrameName" name="errorsFrameName" style="visibility:hidden;" value="errorsFrameName" width="0"></iframe>
+		</table>
+
+
+
+	</form>
+
+</body>
+</html>

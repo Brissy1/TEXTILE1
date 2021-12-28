@@ -1,0 +1,105 @@
+<html>
+<head>
+<style type="text/css">                                                                                               
+			.cellStyleMagazzino{
+    		 border: 1px  black;
+     		background-color: #FFFFCC;
+			}
+			.cellStyleComponente{
+    		 border: 1px  black;
+     		background-color: #FFCC00;
+			}
+			.cellStyleArticolo{
+    		 border: 1px  black;
+     		background-color: #CCCCCC;
+			}
+			.cellStyleDati{
+    		 border: 1px black;
+     		background-color: #FFFFFF;
+			}
+					</style>
+</head>
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" >
+
+	<form name="VtOrdVenRigaPrmRidMagForm">
+		<table>
+			<tr>
+				<td><input id="IdAzienda" name="IdAzienda"
+					style="display: none;" /></td>
+				<td><input id="AnnoOrdine" name="AnnoOrdine"
+					style="display: none;" /></td>
+				<td><input id="NumeroOrdine" name="NumeroOrdine"
+					style="display: none;" /></td>
+				<td><input id="RigaOrdine" name="RigaOrdine"
+					style="display: none;" /></td>
+				<td><input id="DettaglioRigaOrdine" name="DettaglioRigaOrdine"
+					value="0" style="display: none;" /><input id="IdArticolo" name="IdArticolo"
+					style="display: none;" /><input id="GruppoTC" name="GruppoTC"
+					value="0" style="display: none;"/></td>
+
+			</tr>
+		</table>
+
+		<table >
+		
+			<tr>
+				<td><label >Magazzino di partenza</label></td>
+				<td ><span class="multisearchform"
+					id="RMagazzinoPart" name="RMagazzinoPart" ></span></td>
+			</tr>
+			
+			<tr>
+				<td><label >Magazzino di destinazione</label></td>
+				<td ><span class="multisearchform"
+					id="RMagazzinoDest" name="RMagazzinoDest" ></span></td>
+			</tr>
+			
+				 <tr>
+    		<td><label > Quantita da trasferire</label></td>
+    		<td><input  name="QtaTrasferire" id="QtaTrasferire" /> </td>
+    	</tr> 
+    	<tr>
+		<td colspan="2">
+		
+		</td>
+		</tr>
+    		<!--  <tr>
+		<td colspan="2">
+		<table id="Matrice" cellpadding="2" name="Matrice" align="center" style="width:90%;border: 1px solid #000">
+		
+		
+		</table>
+			</td>
+			
+			</tr>-->
+			
+    	
+		<tr>
+		<td colspan="2" style="width:180px;">
+		<table>
+			<tr>
+			<td><button name="OK" id="OK" type="button"  style=" width:180px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			
+			<td><button name="OKTRASF"  id="OKTRASF" type="button" style=" width:180px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			
+			<td><button name="OKONLYTRASF"  id="OKONLYTRASF" type="button" style=" width:180px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			
+			<td><button name="CHIUDI" id="CHIUDI" type="button" style="width:80px;background: #A5B6CE;border-color: #A5B6CE;" /></td>
+			</tr>
+		
+		
+		</table>
+			</td>
+			
+			</tr>
+			
+			
+		</table>
+
+
+
+
+	</form>
+
+</body>
+</html>
